@@ -42,7 +42,7 @@ const imageStyle = "width: 50px;"
 </script>
  
 <template>
-<div>
+
 <h1>Vue Template Syntax</h1><hr>
 <ul>
 <br><span>v-text</span>
@@ -111,9 +111,7 @@ const imageStyle = "width: 50px;"
 <img :src="imagePath" :style="imageStyle" alt="" srcset="">
 
 
-
 <p></p>
-</div>
 </template>
 
 <style>
