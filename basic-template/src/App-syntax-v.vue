@@ -1,3 +1,4 @@
+<!-- Syntax-v -->
 <script setup>
 //1.
 const msg1_1 = 'get text {{ }} Mustache'
