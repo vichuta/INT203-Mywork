@@ -115,6 +115,21 @@ const imageStyle = 'width: 50px;'
           {{ course.courseId }}, {{ course.courseName }}, {{ course.credit }}
         </li>
      
+    <h2 class="text-2xl font-bold pt-3 text-pink-900"> v-on
+      <span class="text-base text-pink-700"> : ใช้เหมือน onclick</span>
+    </h2>
+     <h4 class="text-base text-blue-800">
+        ...
+      </h4>
+   
+    <h2 class="text-2xl font-bold pt-3 text-pink-900"> v-model
+      <span class="text-base text-pink-700"> : ใช้รับค่าจาก html ส่งไปให้ js ประมวลผล</span>
+    </h2>
+     <h4 class="text-base text-blue-800">
+        ...
+      </h4>
+
+
     <h2 class="text-2xl font-bold pt-3 text-blue-900"> get image </h2>
     <!-- x. get image -->
     <img src="./assets/logo.png" :style="imageStyle" />
