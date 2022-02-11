@@ -44,6 +44,9 @@ const imageStyle = 'width: 50px;'
 </script>
 
 <template>
+
+
+
   <div class="m-10">
     <h1 class="text-4xl font-bold ">Vue Template Syntax</h1>
     <hr/>

@@ -1,47 +1,35 @@
-<!-- Example : คำนวณพื้นที่ 3 สามเหลี่ยม 
-ใช้ ref + v-on/@click + computed() + v-model-->
 <script setup>
-console.clear()
-// ต้นฉบับ ยังไม่ active
-// const base = 4
-// const height = 8 
-// const result = (1/2)*base*height
+import SyntaxVtext from './components/1-v-text.vue'
+import SyntaxVbine from './components/2-v-bine.vue'
+import SyntaxVhtml from './components/3-v-html.vue'
+import SyntaxVshow from './components/4-v-show.vue'
+import SyntaxVif_else from './components/5-v-if-else.vue'
+import SyntaxVfor from './components/6-v-for.vue'
+import SyntaxVmodel from './components/8-v-model.vue'
 
-import {ref, computed} from 'vue'
-// แก้เป็น (active แล้ว)
-const base = ref(4)
-const height = ref(8)
-//แสดงค่า result แบบที่ 1 
-//let result = ref(1)
-// const computeArea = ()=> {
-//     console.log('compute area working')
-//     result.value = (1/2)*base.value*height.value
-// }
-
-//แสดงค่า result แบบที่ 2 >> ลองใช้ computed() เข้ามาช่วยคำนวณ และแสดงค่า result อัตโนมัติ
-const result = computed(()=>{
-    return (1/2)*base.value*height.value
-})
-
+import Reactive from './App-Reactive_varible.vue'
 </script>
  
 <template>
-
-<h1>คำนวณหาพื้นที่สามเหลี่ยม</h1>
+<h1>INT203 - Client Web II</h1>
 <div>
-    <p>Base : {{base}}</p>
-    <button @click="base++">Add 1 to base</button>
-    
-    <p>Height : {{height}}</p>
-    <!-- <button @click="height++">Add 1 to height</button> -->
-<!-- ลองเปลี่ยนมาใช้ v-model ช่วยให้ active มากขึ้น -->
-    <input type="number" v-model="height" />
-    
-    <p>Result : {{result}}</p>
-    <!-- <button @click="computeArea()">Compute Area</button> -->
+    <h2>Syntax v</h2>
+    <SyntaxVtext/>
+    <SyntaxVbine/>
+    <SyntaxVhtml/>
+    <SyntaxVshow/>
+    <SyntaxVif_else/>
+    <SyntaxVfor/>
+    <SyntaxVmodel/>
+</div>
+<hr/>
+<div>
+    <h2>Reactive varible</h2>
+    <Reactive/>
 </div>
 </template>
  
 <style>
-    
+body { font-family:sans-serif}
+p,li { font-size: small;}
 </style>

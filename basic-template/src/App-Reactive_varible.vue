@@ -59,19 +59,16 @@ console.clear()
 </script>
 
 <template>
-    <h2>Part 1 - reactive by ref() function</h2>
+    <h3>Part 1 - reactive by ref() function</h3>
     <p>Counter : {{ counter }}</p>
-    <hr />
 
-    <h2>Part 2 - reactive by reactive() function</h2>
+    <h3>Part 2 - reactive by reactive() function</h3>
     <p>Number Object : {{ numbers }}</p>
     <p>Number : {{ numbers.numId }}, Color : {{ numbers.numColor }}</p>
-    <hr/>
 
-    <h2>Part 3 - change reactive to ref by toRef() & toRefs()</h2>
+    <h3>Part 3 - change reactive to ref by toRef() & toRefs()</h3>
+    
 </template>
 
 <style>
-    h2{ color: blue;}
-    p{font-size: smaller;}
 </style>
