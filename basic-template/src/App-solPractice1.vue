@@ -9,14 +9,15 @@ const myAccount = [
 </script>
 
 <template>
+<h3>My Account</h3>
   <ul>
-    <li v-for="account in myAccount">
-      <p v-if="account.amount !== 0">
+    <p v-for="account in myAccount">
+      <li v-if="account.amount !== 0">
         <span>{{ account.name }}</span>
         <span :style=" account.amount > 0 ? 'background-color:green' : 'background-color:red'">
-            {{ account.amount }}</span>
-      </p>
-    </li>
+        {{ account.amount }}</span>
+      </li>
+    </p>
   </ul>
   <p>Net Total: {{myAccount.reduce((total,account)=>total+account.amount,0)}}</p>
 </template>

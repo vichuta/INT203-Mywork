@@ -22,7 +22,7 @@ function sumTotal(){
 </script>
  
 <template>
-<h1 class="uppercase text-center font-bold">My account</h1>
+<h2>My account</h2>
 
 <div class="mx-24">
     <div class="columns-2">

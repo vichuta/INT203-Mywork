@@ -27,7 +27,7 @@ const result = computed(()=>{
  
 <template>
 
-<h1>คำนวณหาพื้นที่สามเหลี่ยม</h1>
+<h3>คำนวณหาพื้นที่สามเหลี่ยม</h3>
 <div>
     <p>Base : {{base}}</p>
     <button @click="base++">Add 1 to base</button>

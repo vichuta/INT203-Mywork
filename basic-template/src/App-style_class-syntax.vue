@@ -1,5 +1,4 @@
 <script setup>
-
 const warningColor = 'orange'
 const italicText = 'italic'
 const isError = true 
@@ -20,48 +19,45 @@ console.log(hasLength())
 </script>
  
 <template>
-<h2>Style syntax</h2>
-<!-- Style attribute : 1) Object Syntax, 2) Array Syntax-->
-    <p style="color:green; font-style:italic;">This is an example text</p>
+<h3>Style syntax : เขียนได้ 2 แบบ</h3>
     
-    <h3>object syntax</h3>
+    <h4>1) object syntax</h4>
     <!-- 1) Object Syntax เขียนได้ 2 แบบย่อย
             1.1 => style="{color: _obj-neme_}"
             1.2 => style="{'font-size': _obj-neme_}"  
                            (ใช่ '' คร่อม property ที่เป็น เคบับ style = font-size, background-color) -->
     <p :style="{color:warningColor, 'font-style':italicText}">
-        this is style with object syntax</p>
-    <p :style="dangerText_obj">Danger text object is {{dangerText_obj}}</p>
+        :style="{color:warningColor, 'font-style':italicText}"</p>
+    <p :style="dangerText_obj">:style="dangerText_obj" / dangerText_obj={{dangerText_obj}}</p>
     
-    <h3>array syntax</h3>
+    <h4>2) array syntax</h4>
     <!-- 2) Array Syntax : 
             Ex. นำตัวแปรที่เก็บ property ของ style มาใส่ใน [] เก็บไว้เป็น array-->
-    <p :style="[successText,decorText]">This it style with array syntax</p>
+    > successText = {{successText}}
+    <p :style="[successText,decorText]">:style="[successText,decorText]"</p>
     <p :style="[successText,isError ? decorText : '' ]">
-        This it style with array syntax
+        :style="[successText,isError ? decorText : '' ]"
     </p>
-    <p :style="[...dangerText_array]">Danger text array is {{dangerText_array}}</p>
+    > dangerText_array = {{dangerText_array}}
+    <p :style="[...dangerText_array]">:style="[...dangerText_array]"</p>
 
-<!--Dynamic style -->
-    <p :style="isError ?'color:red':'color:green'">error message</p>
+    <h5>Dynamic style</h5>
+    > isError = {{isError}}
+    <p :style="isError ?'color:red':'color:green'">:style="isError ?'color:red':'color:green'"</p>
     <!-- or ใช้เป็น binding varible ก็ได้ -->
-    <p :style="isError ? errorText : successText">error message</p> 
+    <p :style="isError ? errorText : successText">:style="isError ? errorText : successText" | errorText= {{errorText}} </p> 
 
-
-<hr>
-<h2>Class syntax</h2>
+<h3>Class syntax : เขียนได้ 2 แบบ</h3>
 <!-- Class attribute : 1) Object Syntax, 2) Array Syntax-->
     <p class="success-text">This is a success text by class</p>
         
-        <h3>object syntax</h3>
-    <!-- 1) Object Syntax -->
+        <h4>1) object syntax</h4>
     <p :class="{'success-text': hasLength(), 'decor-text':isSucceed}">
-        this is class binding (object syntax)</p>
+        :class="{'success-text': hasLength(), 'decor-text':isSucceed}" </p>
         
-        <h3>array syntax</h3>
-    <!-- 1) array Syntax -->
+        <h4>2) array syntax</h4>
     <p :class="['error-text', isSucceed ? 'decor-text':'']">
-        this is class binding (array syntax)</p>
+        :class="['error-text', isSucceed ? 'decor-text' : ' ' ]"</p>
 
 </template>
  

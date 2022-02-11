@@ -5,14 +5,21 @@ import SyntaxVhtml from './components/3-v-html.vue'
 import SyntaxVshow from './components/4-v-show.vue'
 import SyntaxVif_else from './components/5-v-if-else.vue'
 import SyntaxVfor from './components/6-v-for.vue'
+import SyntaxVon from './components/7-v-no.vue'
 import SyntaxVmodel from './components/8-v-model.vue'
 
-import Reactive from './App-Reactive_varible.vue'
+import Reactive from './components/9-Reactive_varible.vue'
+import StyleClassSyntax from './App-style_class-syntax.vue'
+
+import solPractice1 from './App-solPractice1.vue'
+import myPractice1 from './App-myPractices1.vue'
+import myPractice2 from './App-myPractices2.vue'
+import calTriangle from './App-cal-Triangle.vue'
 </script>
  
 <template>
 <h1>INT203 - Client Web II</h1>
-<div>
+<!-- <div>
     <h2>Syntax v</h2>
     <SyntaxVtext/>
     <SyntaxVbine/>
@@ -20,16 +27,27 @@ import Reactive from './App-Reactive_varible.vue'
     <SyntaxVshow/>
     <SyntaxVif_else/>
     <SyntaxVfor/>
+    <SyntaxVon/>
     <SyntaxVmodel/>
 </div>
 <hr/>
 <div>
     <h2>Reactive varible</h2>
     <Reactive/>
+    <h2>Style & Class syntax</h2>
+    <StyleClassSyntax/>
+</div> -->
+<hr/>
+<div>
+    <h2>แบบฝึกหัด</h2>
+    <solPractice1/>     <hr/>
+    <myPractice2/>      <hr/>
+    <calTriangle/>
 </div>
 </template>
  
-<style>
+<style scoped>
 body { font-family:sans-serif}
 p,li { font-size: small;}
+h5 { margin-bottom: 5px;}
 </style>
