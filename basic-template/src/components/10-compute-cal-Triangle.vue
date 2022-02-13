@@ -23,12 +23,18 @@ const result = computed(()=>{
     return (1/2)*base.value*height.value
 })
 
+const descShow = 'computed(()=>{ <b style="color:red;">return</b>(1/2)*base.value*height.value })'
+
 </script>
  
 <template>
-
-<h3>คำนวณหาพื้นที่สามเหลี่ยม</h3>
 <div>
+<h3>Part 4 - compute() function : ใช้ execute-function ที่ return ค่า</h3>
+<h5>คำนวณหาพื้นที่สามเหลี่ยม</h5>
+> base = ref(4)         <br/>
+> height = ref(8)       <br/>
+> result = <span v-html="descShow"></span>
+    
     <p>Base : {{base}}</p>
     <button @click="base++">Add 1 to base</button>
     

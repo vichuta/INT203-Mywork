@@ -15,10 +15,13 @@ function sumTotal(){
     }
     return sum;
 }
-// อาจารย์แนะนำให้ใช้ reduce หาค่า sum ดีกว่า
+// อาจารย์แนะนำให้ใช้ reduce หาค่า sum ดีกว่า^
 // let sum = myAccount.reduce(function (total, currentValue) {
 //   return total + currentValue.amount
 // }, startValue)
+
+const imagePath = "../public/images/Practices1.png"
+
 </script>
  
 <template>
@@ -45,7 +48,8 @@ function sumTotal(){
         <div class="text-right font-bold">Net Total : </div>
         <div class="font-bold">{{sumTotal()}}</div>
     </div>  
-    
+        <a :href="imagePath" ><img :src="imagePath" style="width: 300px;" alt="" srcset="" /></a>
+
 </div>
 </template>
  

@@ -67,6 +67,8 @@ console.clear()
     <p>Number : {{ numbers.numId }}, Color : {{ numbers.numColor }}</p>
 
     <h3>Part 3 - change reactive to ref by toRef() & toRefs()</h3>
+
+
     
 </template>
 

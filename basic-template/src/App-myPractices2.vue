@@ -9,7 +9,7 @@ const addNote = ()=> {
 }
 const keywords = ref('')
 const filterNotes = computed(()=>{
-    return notes.value.filter( (note)=>note.toLowerCase().includes(keywords.value.toLocaleLowerCase()) )
+    return notes.value.filter( (note)=>note.toLowerCase().includes(keywords.value.toLowerCase()) )
 })
 //ลอง print parameter ที่รับมาจาก list notes
 const colorMe = (myNote)=>{console.log(myNote)}
@@ -32,7 +32,7 @@ const colorMe = (myNote)=>{console.log(myNote)}
             <input type="text" v-model="newNote">
             <button @click="addNote">Add Note</button>
         </div>
-            <img :src="imagePath" style="width: 700px;" alt="" srcset="" />
+            <a :href="imagePath" ><img :src="imagePath" style="width: 300px;" alt="" srcset="" /></a>
 </template>
  
 <style>
