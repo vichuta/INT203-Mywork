@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>INT209</title>
-  </head>
-  <body>
-      <h1>Hello World!</h1>
-      <p>63130500106 - Vichuta Pipoppinyo </p>
-  </body>
+    <style> 
+          table {
+                border-collapse: collapse;
+                width: 100%;
+          }
+          th, td {
+                text-align: left;
+                padding: 8px;
+          }
+          tr:nth-child(even) {
+                background-color: #D6EEEE;
+          }
+    </style>
+    </head>
+          <body>
+              <table>
+                 <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Surname</th>
+                      <th>GPAX</th>
+                 </tr>
+                 <tr>
+                      <td>${data[0].ID}</td>
+                      <td>${data[0].FIRSTNAME}</td>
+                      <td>${data[0].SURNAME}</td>
+                      <td>${data[0].GPAX}</td>
+                 </tr>
+                 <tr>
+                      <td>${data[1].ID}</td>
+                      <td>${data[1].FIRSTNAME}</td>
+                      <td>${data[1].SURNAME}</td>
+                      <td>${data[1].GPAX}</td>
+                 </tr>
+                 <tr>
+                      <td>${data[2].ID}</td>
+                      <td>${data[2].FIRSTNAME}</td>
+                      <td>${data[2].SURNAME}</td>
+                      <td>${data[2].GPAX}</td>
+                 </tr>
+                 <tr>
+                      <td>${data[3].ID}</td>
+                      <td>${data[3].FIRSTNAME}</td>
+                      <td>${data[3].SURNAME}</td>
+                      <td>${data[3].GPAX}</td>
+                 </tr>
+                </table>
+          </body>
 </html>
