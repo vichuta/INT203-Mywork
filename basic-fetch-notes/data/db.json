@@ -1,7 +1,32 @@
 {
   "notes": [
-    { "id": 1, "NoteDetail": "preparing exam" },
-    { "id": 2, "NoteDetail": "watch movies" },
-    { "id": 3, "NoteDetail": "Go to Shopping" }
+    {
+      "noteDetail": "Preparing Final Exam II",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "noteDetail": "Go to Shopping"
+    },
+    {
+      "noteDetail": "Go to Library",
+      "id": 4
+    },
+    {
+      "noteDetail": "Go to KMUTT",
+      "id": 6
+    },
+    {
+      "noteDetail": "Watch movies with boyfriend",
+      "id": 7
+    },
+    {
+      "noteDetail": "read book ",
+      "id": 8
+    },
+    {
+      "noteDetail": "listen to music",
+      "id": 9
+    }
   ]
 }
