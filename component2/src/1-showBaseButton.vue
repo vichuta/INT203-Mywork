@@ -3,7 +3,7 @@
 import {ref} from 'vue'
 import BaseButton from './components/BaseButton.vue';
 const bText = ref('Hello')
-const bColor = ref('#000000')
+const bColor = ref('#cccccc')
 </script>
 
 

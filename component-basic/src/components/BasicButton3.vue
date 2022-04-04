@@ -16,18 +16,20 @@ const prop = defineProps({
     {{ buttonName }}
   </button>
 
-<!-- for updateMe3 -->  
+<!-- for updateMe2,3 -->  
   <button class="button-color2" @click="$emit('updateMe', [false, 404, 'FAIL'])">
     {{ buttonName }}
   </button>
 
-<!-- for updateMe4,5 -->
+<!-- for updateMe2,4,5 -->
   <button
     class="button-color3"
     @click="
       $emit('updateMe', { status: false, statusCode: 404, result: 'FAIL' })">
     {{ buttonName }}
   </button>
+
+  
 </template>
 
 <style scoped>

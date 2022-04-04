@@ -1,0 +1,46 @@
+{
+  "movies": [
+    {
+      "id": 101,
+      "poster": "truning-red.jpg",
+      "name": "Trunnig red",
+      "description": "แพนด้าแดง",
+      "rating": 5
+    },
+    {
+      "id": 102,
+      "poster": "angry-bird-2.jpg",
+      "name": "Angry Bird The movie 2",
+      "description": "หนังจากเกม Angrybird ภาค 2",
+      "rating": 4
+    },
+    {
+      "id": 103,
+      "poster": "conan-24.jpg",
+      "name": "Delective Conan the moive 24",
+      "description": "ยอดนักสืบจิ๋วโคนัน เดอะมูฟวี่ 24 กระสุนสีเพลิง",
+      "rating": 3
+    },
+    {
+      "id": 104,
+      "poster": "mlp-new-gen.webp",
+      "name": "My little pony New Generation",
+      "description": "พลังแห่งมิตรภาพของเปหล่าม้าน้อย",
+      "rating": 4.5
+    },
+    {
+      "id": 105,
+      "poster": "spider-man-3.jpg",
+      "name": "Spider-man : No way Home",
+      "description": "Spider-man สู่โลก Multiverse",
+      "rating": 5
+    },
+    {
+      "poster": "the-bad-guys.jpg",
+      "name": "The Bad Guys",
+      "description": "เหล่าวายร้ายที่อยากกลับตัวเป็นคนดี",
+      "rating": 2,
+      "id": 106
+    }
+  ]
+}

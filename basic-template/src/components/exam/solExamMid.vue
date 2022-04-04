@@ -20,7 +20,7 @@ const showNumber = (position) =>{
         isError.value = false
     }else isError.value = true
 }
-
+//1.4
 const bingoDone = computed(() => {
     return randNumbers.value.length === 99 || bingoSheet.value.every((cell) => cell !== 0)
     }
