@@ -41,6 +41,13 @@
       "description": "เหล่าวายร้ายที่อยากกลับตัวเป็นคนดี",
       "rating": 2,
       "id": 106
+    },
+    {
+      "poster": "the-bad-guys.jpg",
+      "name": "The Bad Guys",
+      "description": "เหล่าวายร้ายที่อยากกลับตัวเป็นคนดี",
+      "rating": 5,
+      "id": 107
     }
   ]
 }

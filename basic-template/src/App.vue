@@ -32,7 +32,7 @@ import solExamMid from './components/exam/solExamMid.vue'
     <solExamMid/>
 </div>
 
-<!-- <hr/>
+<hr/>
     <h2>ลองฝึกโจทย์ทำเอง</h2>
     <myTestPart2/> <hr/>
     <myTestPart1/>
@@ -65,7 +65,7 @@ import solExamMid from './components/exam/solExamMid.vue'
         <h2>แบบฝึกหัด (โจทย์ที่อาจารย์คิดให้)</h2>
         <solPractice1/>     <hr/>
         <myPractice2/>      <hr/>
-    </div> -->
+    </div>
 
 </template>
  
